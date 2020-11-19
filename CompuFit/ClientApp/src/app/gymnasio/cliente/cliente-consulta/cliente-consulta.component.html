@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-6">
+        <input [(ngModel)]="searchText" type="text" class="form-control" placeh older="Type to filter">
+    </div>
+</div>
+<hr>
+
+<table class="table table-striped" *ngIf='clientes && clientes.length'>
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Identificación</th>
+            <th scope="col">Nombre </th>
+            <th scope="col">Direccion</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Fecha de Nacimiento</th>
+            <th scope="col">Medida Pecho</th>
+            <th scope="col">MEdida Cintura</th>
+            <th scope="col">Medida Cadera</th>
+            <th scope="col">Plan</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cliente of clientes|filtroCliente:searchText; index as i ">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ cliente.idCliente }} </td>
+            <td>{{ cliente.nombreCliente }}</td>
+            <td>{{cliente.dirCliente }}</td>
+            <td>{{ cliente.telCliente }}</td>
+            <td>{{ cliente.fnCliente }}</td>
+            <td>{{ cliente.pecho }}</td>
+            <td>{{cliente.cintura }}</td>
+            <td>{{ cliente.cadera }}</td>
+            <td>{{ cliente.idPlan }}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "QLe4rByedGSFXhsoPNSOf6Q74gVJO02EjuF0+JiDMioYj2idtxosuxpsnqnrEY3sQtlYHLC6tGXWpsHnF01bAg==",
+  "success": true,
+  "projectFilePath": "D:\\Desktop\\ProyectoGym\\Logica\\Logica.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sindy\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\sindy\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
